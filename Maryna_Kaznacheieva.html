@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebenslauf - Maryna Kaznacheieva</title>
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #4b5563;
+            --text-color: #1f2937;
+            --bg-light: #f3f4f6;
+            --border-color: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f9fafb;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header-title h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+
+        .header-title h2 {
+            margin: 5px 0 0 0;
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            font-weight: 400;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .timeline-company {
+            font-style: italic;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .skills-list, .lang-list, .refs-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills-list li, .lang-list li, .refs-list li {
+            margin-bottom: 8px;
+        }
+
+        .skills-list strong, .lang-list strong, .refs-list strong {
+            color: var(--primary-color);
+        }
+
+        .project-box {
+            background-color: var(--bg-light);
+            padding: 15px;
+            border-left: 4px solid var(--primary-color);
+            margin-top: 10px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>Maryna Kaznacheieva</h1>
+            <h2>Data Analyst / Product Data Specialist</h2>
+        </div>
+        <div class="contact-info">
+            <div>Telefon: Auf Anfrage</div>
+            <div>Telegram: @data_analystin</div>
+            <div>E-Mail: datenanalyst.marina@gmail.com</div>
+            <div>Adresse: Deutschland, 25746 Heide</div>
+        </div>
+    </header>
+
+    <section>
+        <div class="section-title">Über mich</div>
+        <p>
+            Ergebnisorientierte Quereinsteigerin im Bereich Business &amp; Data Analytics mit langjähriger
+            Führungserfahrung im operativen Management und Unternehmertum (Retail, Beauty-Branche). Ich kombiniere
+            fundierte Business-Expertise mit der Fähigkeit, komplexe Geschäftsprozesse in klare Datenstrukturen zu
+            übersetzen.
+            <br><br>
+            Mein Fokus liegt auf der Nutzung von <strong>SQL</strong>, <strong>Power BI</strong> und dem effizienten
+            Einsatz von <strong>KI-Tools</strong>, um Rohdaten in strategische Geschäftserkenntnisse zu verwandeln,
+            Vertriebskanäle zu stärken und Prozesse zu optimieren. Ich zeichne mich durch eine strukturierte
+            Arbeitsweise und eine schnelle Auffassungsgabe bei der Erfassung komplexer Daten aus.
+            <br><br>
+            Aktuell befinde ich mich in einer active Bewerbungsphase für Online- oder Hybrid-Positionen und suche eine
+            Chance, meine kaufmännische Expertise und Tech-Skills als motivierte Spezialistin im Bereich Business &amp;
+            Data Analytics gewinnbringend einzubringen. Parallel vertiefe ich meine Kenntnisse in Tableau sowie Pandas
+            und baue meine Python-Grundlagen gezielt weiter aus.
+        </p>
+    </section>
+
+    <section>
+        <div class="section-title">IT-Weiterbildung</div>
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <span>Abendkurs: Advanced Data Analytics (berufsbegleitend / online)</span>
+                <span>07.2026 - Heute</span>
+            </div>
+            <div class="timeline-company">DAN.IT Schule (Online)</div>
+            <p>Kontinuierliche und selbstständige Vertiefung von praktischen Fähigkeiten in der Datenstrukturierung,
+                 fortgeschrittenem SQL, Tableau, Pandas und Analyse-Methoden an den Abenden.</p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <span>Intensivkurs Data Analytics &amp; IT Systems (Abgeschlossen)</span>
+                <span>01.2026 - 03.07.2026</span>
+            </div>
+            <div class="timeline-company">AIT Technology School Berlin, Deutschland (960 UE)</div>
+            <p><strong>Kursinhalt:</strong> Data Analytics and Business Intelligence, Python Programming, Digital Marketing Strategies &amp; AI-Driven Solutions, Java Development, Fundamentals of Frontend Development, Software Testing.</p>
+            <div class="project-box">
+                <strong>Praxisprojekt:</strong> Eigenständige Datenmodellierung, Bereinigung von Datenlücken,
+                Strukturierung unvollständiger Datensätze sowie Qualitätskontrolle und Konzeption des UI/UX-Designs für
+                Dashboards.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-title">Berufserfahrung</div>
+
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <span>Pädagogische Assistentin</span>
+                <span>05.2024 - 12.2025</span>
+            </div>
+            <div class="timeline-company">Grundschule in Heide, Deutschland</div>
+            <ul>
+                <li>Organisation und Strukturierung des täglichen Arbeitsablaufs und Dokumentenmanagements</li>
+                <li>Tägliche zielorientierte Kommunikation auf Deutsch im Team</li>
+                <li>Analytische Ermittlung von Konfliktursachen und zielgerichtete Ausarbeitung von strukturierten Lösungen</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <span>Inhaberin / Geschäftsführerin</span>
+                <span>2018 - 2022</span>
+            </div>
+            <div class="timeline-company">Beauty-Studio (FOP Kaznacheieva), Ukraine</div>
+            <ul>
+                <li>Strategische und operative Planung, Budgetierung und kontinuierliche Kostenkontrolle</li>
+                <li>Pflege, Verwaltung und Aktualisierung des Produkt- und Dienstleistungskatalogs (Stammdatenpflege)</li>
+                <li>Marktanalyse zur Optimierung von internen Geschäftsprozessen und Workflows</li>
+                <li>Kundenmanagement sowie strukturierte Analyse की Kundenzufriedenheit und Service-Reports</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <span>Kaufmännische Leiterin / Filialleiterin</span>
+                <span>2006 - 2011</span>
+            </div>
+            <div class="timeline-company">Retail / Einzelhandel, Ukraine</div>
+            <ul>
+                <li>Regelmäßige Umsatzanalyse, Vertriebsanalyse und Erstellung von Performance-Reportings</li>
+                <li>Grundlegende Verwaltung, Pflege und Steuerung von produktbezogenen Daten im ERP-System (1C)</li>
+                <li>Sicherstellung der Datenkonsistenz, Artikelstammdatenpflege und Bestandsprüfung im System</li>
+                <li>Teamführung anhand von KPI-Analysen und enge Zusammenarbeit mit internen Schnittstellen</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <span>Friseurmeisterin (Angestellt)</span>
+                <span>2012 - 2017</span>
+            </div>
+            <div class="timeline-company">Schönheitssalon, Ukraine</div>
+            <ul>
+                <li>Professionelle Kundenberatung und lösungsorientierte Kommunikation</li>
+                <li>Analyse und systematische Ermittlung von Kundenbedürfnissen</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="grid-2">
+        <section>
+            <div class="section-title">Ausbildung</div>
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span>Fortbildung Top-Management</span>
+                    <span>2004 - 2005</span>
+                </div>
+                <div class="timeline-company">Polytechnisches Institut Charkiw, Ukraine</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span>Diplom-Lehrerin</span>
+                    <span>1996 - 2003</span>
+                </div>
+                <div class="timeline-company">Nationale Pädagogische Universität Charkiw, Ukraine</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Fachkenntnisse</div>
+            <ul class="skills-list">
+                <li><strong>Datenanalyse & BI:</strong> SQL (Verständnis von Datenstrukturen & Abfragen), Power BI
+                    (Dashboards & Visualisierung), Python (Grundlagen)
+                </li>
+                <li><strong>KI-gestützte Entwicklung:</strong> Nutzung von KI-Tools zur effizienten Code-Generierung und
+                    -Analyse; starkes logisches Verständnis für die Funktionsweise von Abfragen
+                </li>
+                <li><strong>Datenmanagement:</strong> MS Excel (Grundkenntnisse: Tabellenkalkulation, Datenpflege), SAP
+                    (Grundkenntnisse)
+                </li>
+                <li><strong>Business-Skills:</strong> Stammdatenpflege, Vertriebs- und Umsatzanalyse, Steuerung von
+                    Geschäftsprozessen, Budgetierung
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="grid-2">
+        <section>
+            <div class="section-title">Sprachen</div>
+            <ul class="lang-list">
+                <li><strong>Deutsch:</strong> Grundkenntnisse (A2 – intensive Vorbereitung auf das B1-Zertifikat)</li>
+                <li><strong>Englisch:</strong> Grundkenntnisse</li>
+                <li><strong>Ukrainisch / Russisch:</strong> Muttersprache</li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="section-title">Referenzen</div>
+            <ul class="refs-list">
+                <li><strong>Grundschule in Heide:</strong> Sekretariat (Kontakt auf Anfrage)</li>
+                <li><strong>AIT School Berlin:</strong> Mentoren-Referenz auf Anfrage erhältlich</li>
+            </ul>
+        </section>
+    </div>
+</div> <!-- End Container -->
+
+</body>
+</html>
